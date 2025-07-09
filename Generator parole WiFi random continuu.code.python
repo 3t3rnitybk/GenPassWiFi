@@ -12,7 +12,7 @@ def generate_passwords_continuous(filename, length=10):
                 pwd = generate_password(length)
                 f.write(pwd + '\n')
         except KeyboardInterrupt:
-            print("\nGenerare oprită manual.")
+            print("\nGeneration stopped manually.")
 
 if __name__ == "__main__":
     output_file = "passwords_continuous.txt"
