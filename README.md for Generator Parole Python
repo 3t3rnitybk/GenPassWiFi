@@ -1,0 +1,55 @@
+# Python Password Generator
+
+This is a simple script written in Python to generate random 10-character WiFi passwords. The script generates passwords continuously and saves them in a text file.
+
+## How to use
+
+1. Make sure you have Python 3 installed on your computer.
+2. Clone or download this repository.
+3. Open a terminal and navigate to the folder where the script is located.
+4. Run the script with the command:
+```
+python3 generate_passwords_continuous.py
+```
+5. To stop the generation, press `Ctrl + C`.
+
+6. The generated passwords will be saved in the `passwords_continuous.txt` file in the same folder.
+
+## Script description
+
+- The script uses the `random` and `string` modules to create passwords consisting of uppercase, lowercase, and numbers.
+- The passwords have a fixed length of 10 characters.
+- Generates passwords continuously until the user manually stops the process.
+
+## Requirements
+
+- Python 3.x
+
+## Contributions
+
+Any suggestions or improvements are welcome! You can fork the repository and submit a pull request.
+
+## License
+
+This project is available under the MIT license.
+_________________________________________________________________________________________________
+Modified script for continuous generation until manually stopped
+If you want to generate as many passwords as possible, you can use 
+a script that continuously writes to the file until you manually stop it (Ctrl+C):
+How it works:
+1-You run the script.
+2-It will generate and write passwords to a file continuously.
+3-You stop with Ctrl+C when you think you've had enough.
+Generating a very large number of passwords (in the order of tens or hundreds of millions, or even billions) is limited in practice by:
+
+Disk storage space (the file will be very large)
+Time required for generation and writing
+Processing capacity of your computer
+Disk space estimate
+A 10-character password + a newline character takes up approximately 11 bytes.
+
+For:
+
+10 million passwords → ~110 MB
+100 million passwords → ~1.1 GB
+1 billion passwords → ~11 GB
